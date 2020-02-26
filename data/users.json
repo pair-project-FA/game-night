@@ -38,5 +38,13 @@
     "telephone_number": 5678901234,
     "behaviour_score": 1,
     "game_score": 200
+  },
+  {
+    "username": "lele",
+    "password": "lele",
+    "email": "lele@gmail.com",
+    "telephone_number": 7890123456,
+    "behaviour_score": 150,
+    "game_score": 50
   }
 ]

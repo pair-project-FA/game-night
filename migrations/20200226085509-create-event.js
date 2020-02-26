@@ -23,7 +23,7 @@ module.exports = {
       GameId: {
         type: Sequelize.INTEGER
       },
-      AdminId: {
+      UserId: {
         type: Sequelize.INTEGER
       },
       createdAt: {

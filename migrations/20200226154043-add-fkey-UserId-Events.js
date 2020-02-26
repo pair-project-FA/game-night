@@ -2,11 +2,11 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.addConstraint("Events", ["AdminId"], {
+    return queryInterface.addConstraint("Events", ["UserId"], {
       type: "foreign key",
-      name: "fkey_AdminId_Events",
+      name: "fkey_UserId_Events",
       references: {
-        table: "Admins",
+        table: "Users",
         field: "id"
       },
       onDelete: "cascade",
@@ -15,6 +15,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.removeConstraint("Events", "fkey_AdminId_Events");
+    return queryInterface.removeConstraint("Events", "fkey_UserId_Events");
   }
 };

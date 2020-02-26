@@ -1,6 +1,6 @@
 "use strict";
 module.exports = (sequelize, DataTypes) => {
-  class User extends sequelize.Sequelize.Models {}
+  class User extends sequelize.Sequelize.Model {}
 
   User.init(
     {
@@ -19,7 +19,8 @@ module.exports = (sequelize, DataTypes) => {
 
   User.associate = function(models) {
     // associations can be defined here
-    User.belongsToMany(models.Event, {through : "EventUsers"});
+    User.hasMany(models.Event);
+    User.belongsToMany(models.Event, { through: "EventUsers" });
   };
   return User;
 };

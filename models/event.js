@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       start_date: DataTypes.DATE,
       end_date: DataTypes.DATE,
       GameId: DataTypes.INTEGER,
-      AdminId: DataTypes.INTEGER
+      UserId: DataTypes.INTEGER
     },
     {
       sequelize,
@@ -18,6 +18,8 @@ module.exports = (sequelize, DataTypes) => {
   );
   Event.associate = function(models) {
     // associations can be defined here
+    Event.belongsTo(models.Game);
+    Event.belongsTo(models.User);
     Event.belongsToMany(models.User, { through: "EventUsers" });
   };
   return Event;

@@ -1,27 +1,32 @@
 [
   {
     "name": "Monopoly",
-    "description": "Description about Monopoly",
-    "max_player_count": 8
+    "description": "Monopoly is a board game currently published by Hasbro. In the game, players roll two six-sided dice to move around the game board, buying and trading properties, and developing them with houses and hotels.",
+    "max_player_count": 8,
+    "play_time": 90
   },
   {
     "name": "Poker",
-    "description": "Description about Poker",
-    "max_player_count": 9
+    "description": "Poker is a game which people play with a normal set (or deck) of 52 cards.",
+    "max_player_count": 9,
+    "play_time": 60
   },
   {
     "name": "Scrabble",
-    "description": "Description about Scrabble",
-    "max_player_count": 4
+    "description": "Scrabble, board-and-tile game in which two to four players compete in forming words with lettered tiles on a 225-square board.",
+    "max_player_count": 4,
+    "play_time": 50
   },
   {
     "name": "Catan",
-    "description": "Description about Catan",
-    "max_player_count": 4
+    "description": "The Settlers of Catan from Mayfair Games is an award-winning strategy game.",
+    "max_player_count": 4,
+    "play_time": 120
   },
   {
     "name": "Risk",
-    "description": "Description about Risk",
-    "max_player_count": 6
+    "description": "Risk is a strategy board game of diplomacy, conflict and conquest for two to six players.",
+    "max_player_count": 6,
+    "play_time": 150
   }
 ]

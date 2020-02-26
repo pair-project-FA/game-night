@@ -1,12 +1,13 @@
 "use strict";
 module.exports = (sequelize, DataTypes) => {
-  class Game extends sequelize.Sequelize.Models {}
+  class Game extends sequelize.Sequelize.Model {}
 
   Game.init(
     {
       name: DataTypes.STRING,
       description: DataTypes.STRING,
-      max_player_count: DataTypes.INTEGER
+      max_player_count: DataTypes.INTEGER,
+      play_time: DataTypes.INTEGER
     },
     {
       sequelize,
