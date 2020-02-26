@@ -1,0 +1,32 @@
+[
+    {
+      "username": "adminAlps",
+      "password": "12345admin",
+      "email": "aaaadmin@gmail.com",
+      "telephone_number": 1234567890
+    },
+    {
+      "username": "adminBabes",
+      "password": "67890admin",
+      "email": "bbbadmin@gmail.com",
+      "telephone_number": 2345678901
+    },
+    {
+      "username": "adminCharles",
+      "password": "abcdeadmin",
+      "email": "cccadmin@gmail.com",
+      "telephone_number": 3456789012
+    },
+    {
+      "username": "adminDrill",
+      "password": "yhjlkadmin",
+      "email": "dddadmin@gmail.com",
+      "telephone_number": 4567890123
+    },
+    {
+      "username": "adminEagle",
+      "password": "odyijadmin",
+      "email": "eeeadmin@gmail.com",
+      "telephone_number": 5678901234
+    }
+  ]

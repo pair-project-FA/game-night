@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Monopoly",
+    "description": "Description about Monopoly",
+    "max_player_count": 8
+  },
+  {
+    "name": "Poker",
+    "description": "Description about Poker",
+    "max_player_count": 9
+  },
+  {
+    "name": "Scrabble",
+    "description": "Description about Scrabble",
+    "max_player_count": 4
+  },
+  {
+    "name": "Catan",
+    "description": "Description about Catan",
+    "max_player_count": 4
+  },
+  {
+    "name": "Risk",
+    "description": "Description about Risk",
+    "max_player_count": 6
+  }
+]

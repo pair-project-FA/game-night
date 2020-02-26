@@ -1,0 +1,29 @@
+{
+  "name": "game-night",
+  "version": "1.0.0",
+  "description": "App to plan games with your friends or strangers.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pair-project-FA/game-night.git"
+  },
+  "keywords": [
+    "pair-project"
+  ],
+  "author": "fadhilahm andreasnw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pair-project-FA/game-night/issues"
+  },
+  "homepage": "https://github.com/pair-project-FA/game-night#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session-sequelize": "^2.2.0",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5"
+  }
+}

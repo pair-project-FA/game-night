@@ -1,0 +1,42 @@
+[
+  {
+    "username": "alphaAlps",
+    "password": "12345",
+    "email": "aaa@gmail.com",
+    "telephone_number": 1234567890,
+    "behaviour_score": 5,
+    "game_score": 100
+  },
+  {
+    "username": "betaBabes",
+    "password": "67890",
+    "email": "bbb@gmail.com",
+    "telephone_number": 2345678901,
+    "behaviour_score": 50,
+    "game_score": 10
+  },
+  {
+    "username": "charlieCharles",
+    "password": "abcde",
+    "email": "ccc@gmail.com",
+    "telephone_number": 3456789012,
+    "behaviour_score": 75,
+    "game_score": 1
+  },
+  {
+    "username": "deltaDrill",
+    "password": "yhjlk",
+    "email": "ddd@gmail.com",
+    "telephone_number": 4567890123,
+    "behaviour_score": 100,
+    "game_score": 50
+  },
+  {
+    "username": "epsilonEagle",
+    "password": "odyij",
+    "email": "eee@gmail.com",
+    "telephone_number": 5678901234,
+    "behaviour_score": 1,
+    "game_score": 200
+  }
+]
