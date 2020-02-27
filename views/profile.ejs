@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Profile Page</title>
-    <%- include('./partials/css-bootstrap.ejs') %>
-    <link href="/css/home.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <%-include('./partials/navbar.ejs')%>
-    <div class="row">
-      <div class="col-6">
-        <div id="user_display_container">
-          <div>
-            <img
-              id="avatar"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcAovx_L5MCZu8BoLl1LyiDdIfKG0axFXuGTma2CQ-itz_Ajne"
-              alt="avatar"
-            />
-          </div>
-          <div id="username">
-            <h1 id="username_text">'<%= data.username %>'</h1>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User</title>
+    <%- include('./partials/css-bootstrap.ejs') %>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="profile_body">
+    <div class="row" style="height: 400px; background-color: transparent;">
+        <div class="col-4">
+            <div id="profile_background">
+                <img id="avatar"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcAovx_L5MCZu8BoLl1LyiDdIfKG0axFXuGTma2CQ-itz_Ajne"
+                    alt="avatar">
+                <h1 id="username_text"><%= data.username %></h1>
+                <div id="user_container">
+                    <div id="user">
+                        <h2>email: <%= data.email %></h2>
+                    </div>
+                    <div id="user">
+                        <h2>telephone number: <%= data.telephone_number %></h2>
+                    </div>
+                    <div id="user">
+                        <h2>behaviour score: <%= data.behaviour_score %></h2>
+                    </div>
+                    <div id="user">
+                        <h2>game score: <%= data.game_score %></h2>
+                    </div>
+                </div>
+                <a href="/"> <img src="/assets/homebutton.png" alt="backbutton" style="height:65px; margin-top:80px">
+                </a>
+                <a href="/logout"> <img src="/assets/logout.png" alt="backbutton"
+                        style="height:65px; margin-top: 80px; margin-left: 20px;"> </a>
+            </div>
         </div>
-        <div id="user_container">
-          <div id="user"><h2>email: <%= data.email %></h2></div>
-          <div id="user">
-            <h2>telephone number: <%= data.telephone_number %></h2>
-          </div>
-          <div id="user">
-            <h2>behaviour score: <%= data.behaviour_score %></h2>
-          </div>
-          <div id="user"><h2>game score: <%= data.game_score %></h2></div>
+        <div class="col-8">
+            <div class="row">
+                <div id="events_container">
+                    <div class="row" style="height: 400px; background-color: transparent;">
+                        <h1>Events that you created</h1>
+                        <table style="width:100%">
+                            <tr>
+                                <th>name</th>
+                                <th>game</th>
+                                <th>location</th>
+                                <th>date</th>
+                            </tr>
+                            <% for(let i = 0; i < dataCreate.length; i++){ %>
+                            <tr>
+                                <td><%= dataCreate[i].name %></td>
+                                <td><%= dataCreate[i].Game.name %></td>
+                                <td><%= dataCreate[i].location %></td>
+                                <td><%= dataCreate[i].start_date %></td>
+                            </tr>
+                            <% } %>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="height: 400px; background-color:transparent;" id="events_join">
+                    <h1>Events that you joined</h1>
+                    <table style="width:100%">
+                        <tr>
+                            <th>name</th>
+                            <th>game</th>
+                            <th>location</th>
+                            <th>date</th>
+                        </tr>
+                        <% for(let i = 0; i < dataJoin.length; i++){ %>
+                        <tr>
+                            <td><%= dataJoin[i].name %></td>
+                            <td><%= dataJoin[i].Event.Game.name %></td>
+                            <td><%= dataJoin[i].Event.location %></td>
+                            <td><%= dataJoin[i].Event.start_date %></td>
+                        </tr>
+                        <% } %>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-6">
-        <div class="row" style="height: 400px; background-color: chartreuse;">
-          <h1>Events that you created</h1>
-          <table style="width:100%">
-            <tr>
-              <th>name</th>
-              <th>game</th>
-              <th>location</th>
-              <th>date</th>
-            </tr>
-            <% for(let i = 0; i < dataCreate.length; i++){ %>
-            <tr>
-              <td><%= dataCreate[i].name %></td>
-              <td><%= dataCreate[i].Game.name %></td>
-              <td><%= dataCreate[i].location %></td>
-              <td><%= dataCreate[i].start_date %></td>
-            </tr>
-            <% } %>
-          </table>
-        </div>
-        </div>
-        <div class="row" style="height: 400px; background-color: red;">
-          <h1>Events that you joined</h1>
-          <table style="width:100%">
-            <tr>
-              <th>name</th>
-              <th>game</th>
-              <th>location</th>
-              <th>date</th>
-            </tr>
-            <% for(let i = 0; i < dataJoin.length; i++){ %>
-            <tr>
-                <td><%= dataJoin[i].name %></td>
-                <td><%= dataJoin[i].Event.Game.name %></td>
-                <td><%= dataJoin[i].Event.location %></td>
-                <td><%= dataJoin[i].Event.start_date %></td>
-            </tr>
-            <% } %>
-          </table>
-        </div>
-      </div>
     </div>
-    <%-include ('./partials/js-bootstrap.ejs') %>
-  </body>
+
+    <div id="user_display_container">
+
+
+
+
+
+        <%-include ('./partials/js-bootstrap.ejs') %>
+</body>
+
 </html>

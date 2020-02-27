@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login</title>
-    <%-include ('./partials/css-bootstrap.ejs') %>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <%-include ('./partials/css-bootstrap.ejs') %>
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="login_body">
+  <div>
+    <div id="login_placeholder">
+      <img src="/assets/login.png">
+    </div>
     <div>
-      <div>
-        <h1>LOGIN</h1>
-      </div>
-      <div>
-        <form action="/login" method="POST">
+      <form action="/login" method="POST">
+        <div id ="login_page">
           <div class="form-group">
             <label for="username">Username</label>
-            <input
-              type="text"
-              class="form-control"
-              id="username"
-              name="username"
-            />
+            <input type="text" class="form-control" id="username" name="username">
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              name="password"
-            />
+            <input type="password" class="form-control" id="password" name="password">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+        </div>
     </div>
-    <div id="error">
-      <% if(error) { %>
-      <p><%= error %></p>
-      <%} %>
-    </div>
-    <%-include ('./partials/js-bootstrap.ejs') %>
-  </body>
+          <% if(error) { %>
+            <p><%= error %></p>
+            <%} %>
+  </div>
+  <%-include ('./partials/js-bootstrap.ejs') %>
+</body>
+
 </html>

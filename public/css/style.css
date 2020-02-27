@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'depixelbreit';
+    src: url('depixelbreit-webfont.eot');
+    src: url('depixelbreit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('depixelbreit-webfont.woff2') format('woff2'),
+         url('depixelbreit-webfont.woff') format('woff'),
+         url('depixelbreit-webfont.ttf') format('truetype'),
+         url('depixelbreit-webfont.svg#depixelbreit') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* LOGIN */
+
+#login_body {
+    background-image: url('/assets/house.jpg');
+    background-repeat: no-repeat;
+    background-size: 1440px 936px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#login_placeholder {
+    margin-top: 100px;
+    margin-left: 40%;
+}
+
+#login_page {
+    margin-top: 150px;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+/* CREATE */
+
+.create_body {
+    background-image: url('/assets/house.jpg');
+    background-repeat: no-repeat;
+    background-size: 1440px 936px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#create_placeholder {
+    margin-top: 140px;
+    margin-left: 35%;
+}
+
+#create_main {
+    margin-top: 75px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* HOME */
+
+.home_body {
+    background-image: url('/assets/house.jpg');
+    background-repeat: no-repeat;
+    background-size: 1440px 936px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#home_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    margin-top: 100px;
+    margin-left: 370px;
+    width: 60%;
+    height: 100px;
+    padding: 0px;
+    /* background-color: red; */
+    display: flex;
+}
+
+#navigation {
+    margin-top: 100px;
+    margin-left: 370px;
+    width: 60%;
+    height: 200px;
+    display: flex;
+}
+
+#profile_picture {
+    position: static;
+    background-color: green;
+}
+
+#select_game_background {
+    height: 300px;
+}
+
+#select_game_image {
+    position: absolute;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: -230px;
+}
+
+#select_game_placeholder {
+    height: 80px;
+    margin-left: 750px;
+    margin-top: 250px;
+}
+
+
+
+/* USER */
+
+#profile_body {
+    background-color: #FA741B;
+}
+
+#user_display_container {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+#avatar {
+    border-radius: 100px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+#username {
+    position: relative;
+    margin-top: 20px;
+}
+
+#username_text {
+    margin-top : -45px;
+    margin-left: 3%
+}
+
+#user_container {
+    margin-left: 3%;
+}
+
+
+#profile_background {
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    border: 20px black solid;
+}
+
+#events_container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* EVENT */
+
+.event_body {
+    background-image: url('/assets/Tavern');
+    background-repeat: no-repeat;
+    background-size: 1440px 936px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+#events_div_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#events_add_bottom {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 5;
+}
+
+#events_add_top {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    z-index: 5;
+}
+
+#events_top {
+    /* background-color: red; */
+    width:450px;
+    height: 240px;
+    margin-left:780px;
+    display:flex;
+}
+
+#events_bot {
+    /* background-color: red; */
+    width:450px;
+    height: 240px;
+    margin-left:780px;
+    display:flex;
+}
+
+#table {
+    /* position:static; */
+    width:200px;
+    height: 200px;
+    /* background-color: thistle; */
+}
+
+#table_image {
+    position: static;
+    margin-left: -180px;
+    margin-top: -180px;
+    /* background-color: teal; */
+}
+
+#join_button {
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 20px;
+}
+
+#speech {
+    position: absolute;
+    margin-top: -230px;
+    width: 300px;
+    /* display: none; */
+}
+
+
+#speech_container {
+    background-image: url('/assets/speech.png');
+    background-size: 300px;
+    background-position: center;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: -230px;
+    margin-left: -50px;
+    padding-top: 40px;
+    /* display: none; */
+}
+
+#speech_text {
+    position: static;
+    z-index: 2;
+    /* background-color: blue; */
+    margin-left: 50px;
+    width: 90%;
+}
+
+#create_button {
+    margin-left: -450px;
+    margin-top: 200px;
+}
+
+#game_image {
+    width: 300px;
+    height: 300px;
+    /* background-color: red; */
+    margin-left: 1280px;
+}
+
+#home_button {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 1320px;
+    cursor: pointer;
+}

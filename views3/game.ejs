@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game Page</title>
+    <%- include('./partials/css-bootstrap.ejs') %>
+    <link href="/css/home.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <%-include('./partials/navbar.ejs')%>
+    <section>
+      <div class="container">
+        <div class="row" style="height: 500px;">
+          <div class="col-sm" style="background-color: blue;">
+            One of three columns
+          </div>
+          <div class="col-sm" style="background-color:blueviolet">
+            <div style="background-color: burlywood; height: 30%;">
+              <a
+                class="btn btn-primary"
+                href="/games/<%= data.id %>/create"
+                role="button"
+                >Create a new Event</a
+              >
+            </div>
+            <div style="background-color:brown; height: 70%;">
+              <h1>List of Available Games</h1>
+              <table style="width:100%">
+                <tr>
+                  <th>Name</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                  <th>Option</th>
+                </tr>
+                <% for(let i=0; i < events.length;i++){ %>
+                <tr>
+                  <td><%= events[i].name %></td>
+                  <td><%= events[i].location %></td>
+                  <td><%= events[i].start_date %></td>
+                  <td>
+                    <a
+                      class="btn btn-primary"
+                      href="/events/<%= events[i].id %> /join"
+                      role="button"
+                      >JOIN</a
+                    >
+                  </td>
+                </tr>
+                <% } %>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%-include ('./partials/js-bootstrap.ejs') %>
+  </body>
+</html>

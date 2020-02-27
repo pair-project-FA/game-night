@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Game Page</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User</title>
     <%- include('./partials/css-bootstrap.ejs') %>
-    <link href="/css/home.css" rel="stylesheet" type="text/css" />
-  </head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
 
-  <body>
-    <%-include('./partials/navbar.ejs')%>
-    <section>
-      <div class="container">
-        <div class="row" style="height: 500px;">
-          <div class="col-sm" style="background-color: blue;">
-            One of three columns
-          </div>
-          <div class="col-sm" style="background-color:blueviolet">
-            <div style="background-color: burlywood; height: 30%;">
-              <a
-                class="btn btn-primary"
-                href="/games/<%= data.id %>/create"
-                role="button"
-                >Create a new Event</a
-              >
+<body class="event_body">
+    <div id="events_div_container">
+        
+        <div id="events_add_top">
+            <div id="game_image">
+                <button type="button" value="join_game" id="create_button">
+                    <a href="/games/<%= data.id %>/create">CREATE NEW ADVENTURE!</a>
+                    </button>
+                <h1> </h1>
             </div>
-            <div style="background-color:brown; height: 70%;">
-              <h1>List of Available Games</h1>
-              <table style="width:100%">
-                <tr>
-                  <th>Name</th>
-                  <th>Location</th>
-                  <th>Date</th>
-                  <th>Option</th>
-                </tr>
-                <% for(let i=0; i < events.length;i++){ %>
-                <tr>
-                  <td><%= events[i].name %></td>
-                  <td><%= events[i].location %></td>
-                  <td><%= events[i].start_date %></td>
-                  <td>
-                    <a
-                      class="btn btn-primary"
-                      href="/events/<%= events[i].id %> /join"
-                      role="button"
-                      >JOIN</a
-                    >
-                  </td>
-                </tr>
-                <% } %>
-              </table>
+            <div>
+                <a href="/"> <img  src="/assets/homebutton.png" alt="backbutton" id="home_button" > </a>
             </div>
-          </div>
+        </div> 
+        <div id="events_add_bottom">
+            <div>
+                <div id="events_bot">
+                        <div id="table">
+                            <!-- <div id="speech_container">
+                                <p id="speech_text">event: warriors of waterdeep</p>
+                                <p id="speech_text">location:</p>
+                                <p id="speech_text">start:</p>
+                                <p id="speech_text">end:</p> -->
+                                <!-- <img src="/assets/speech.png" id="speech"> -->
+                            <!-- </div> -->
+                            <img src="/assets/chair.png" alt="chair" id="table_image">
+                            <button type="button" value="join_game" id="join_button">JOIN GAME!</button>
+                        </div>
+                </div>
+                <div id="events_bot">
+                    <% for (let i = 0; i < events.length; i++) {%>
+                    <div id="table">
+                        <div id="speech_container">
+                            <p id="speech_text"><%= events[i].name %></p>
+                            <p id="speech_text"><%= events[i].location %></p>
+                            <p id="speech_text"><%= events[i].start_date %></p>
+                            <!-- <img src="/assets/speech.png" id="speech"> -->
+                        </div>
+                        <img src="/assets/chair.png" alt="chair" id="table_image">
+                        <button type="button" value="join_game" id="join_button"><a href="/events/<%= events[i].id %> /join">JOIN GAME!</a></button>
+                    </div>
+                    <%} %>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+        <%-include ('./partials/js-bootstrap.ejs') %>
+</body>
 
-    <%-include ('./partials/js-bootstrap.ejs') %>
-  </body>
 </html>
