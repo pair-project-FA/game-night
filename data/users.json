@@ -46,5 +46,13 @@
     "telephone_number": 7890123456,
     "behaviour_score": 150,
     "game_score": 50
+  },
+  {
+    "username": "fadhilahm",
+    "password": "fadhilahm",
+    "email": "fadhilahmetra@gmail.com",
+    "telephone_number": 7890123456,
+    "behaviour_score": 150,
+    "game_score": 50
   }
 ]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <%- include('./partials/css-bootstrap.ejs') %>
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <%-include('./partials/navbar.ejs')%>
+    <div id="game_head">
+        <h1>WELCOME `<%= user.username %>`</h1>
+    </div>
+    <div class="game_flex_container">
+        <% for(let i = 0; i < data.length; i++){ %> 
+        <div id="game_card" class="card" style="width: 25rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFG6X_oxVTBRqQJGdjT1NgcMYvoEP3w08-TY2acegLYC0qCvKJ" class="card-img-top" alt="monopoly">
+            <div class="card-body">
+                <h5 class="card-title"><%= data[i].name %></h5>
+                <p class="card-text"><%= data[i].description %></p>
+                <a href="/games/<%= data[i].id %>" class="btn btn-primary">Click to Play</a>
+            </div>
+        </div>
+    <% } %> 
+    </div>
+    <%-include ('./partials/js-bootstrap.ejs') %>
+</body>
+
+</html>

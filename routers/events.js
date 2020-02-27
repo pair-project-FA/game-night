@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const Controller = require("../controllers/User");
 const logInValidate = require("../helpers/loginValidation");
+const Controller = require("../controllers/Event");
 
-router.get("/", logInValidate, Controller.showProfilePage);
+router.get("/:eventId/join", logInValidate, Controller.joinEvent);
 
 module.exports = router;

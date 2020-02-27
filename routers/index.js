@@ -1,19 +1,17 @@
 const router = require("express").Router();
-const logIn = require("../controllers/login");
-const User = require("../controllers/User");
+const usersRouter = require("../routers/users");
+const gamesRouter = require("../routers/games");
+const eventsRouter = require("../routers/events");
+const logInController = require("../controllers/LogIn");
+const homeController = require("../controllers/Home");
+const logInValidate = require("../helpers/loginValidation");
 
-router.get("/login", logIn.showLogIn);
-router.post("/login", logIn.logIn);
-router.get(
-  "/",
-  (req, res, next) => {
-    if (!req.session.isLogIn) {
-      logIn.showLogIn;
-    } else {
-      next();
-    }
-  },
-  User.showHome
-);
+router.get("/login", logInController.showLogInPage);
+router.post("/login", logInController.logIn);
+router.get("/logout", logInController.logOut);
+router.get("/", logInValidate, homeController.showHomePage);
+router.use("/users", usersRouter);
+router.use("/games", gamesRouter);
+router.use("/events", eventsRouter);
 
 module.exports = router;
