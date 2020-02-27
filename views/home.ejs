@@ -10,39 +10,22 @@
     <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <%-include('./partials/navbar.ejs')%>
-    <div id="game_head">
-        <h1>WELCOME 'USER'</h1>
+<body class="home_body">
+    <div id="home_container">
+        <div id="navbar">
+            <img style="height: 100px; margin-top:0px"
+                src="https://ih0.redbubble.net/image.613776335.5698/fmp,x_small,gloss,wall_texture,product,750x1000.u11.jpg"
+                alt="profile_picture">
+            <h1 id="username">"USERNAME"</h1>
+            <div>
+                <a href="home"> <img src="/assets/homebutton.png" alt="backbutton" id="home_button"
+                        style="margin-left:0px; margin-top:20px; height:50%"></a>
+            </div>
+        </div>
     </div>
-    <div class="game_flex_container">
-        <div id="game_card" class="card" style="width: 25rem;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFG6X_oxVTBRqQJGdjT1NgcMYvoEP3w08-TY2acegLYC0qCvKJ" class="card-img-top" alt="monopoly">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div id="game_card" class="card" style="width: 25rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div id="game_card" class="card" style="width: 25rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+    <div id="navigation">
+        <p> </p>
+    </div>
     </div>
     <%-include ('./partials/js-bootstrap.ejs') %>
 </body>

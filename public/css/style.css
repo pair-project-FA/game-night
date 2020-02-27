@@ -11,34 +11,46 @@
 
 }
 
-body {
-    background-image: url('/assets/Tavern');
+
+
+/* LOGIN */
+
+/* HOME */
+
+.home_body {
+    background-image: url('/assets/house.jpg');
     background-repeat: no-repeat;
     background-size: 1440px 936px;
     background-attachment: fixed;
     background-position: center;
 }
 
-/* LOGIN */
-
-/* GAME */
-h1 {
-    font-family: 'depixelbreitfett';
-}
-
-#game_head {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.game_flex_container {
+#home_container {
     display: flex;
-    width: 100%;
-    top: 30%;
+    flex-direction: column;
 }
 
-#game_card {
-    margin: auto;
+#navbar {
+    margin-top: 100px;
+    margin-left: 370px;
+    width: 60%;
+    height: 100px;
+    padding: 0px;
+    background-color: red;
+    display: flex;
+}
+
+#navigation {
+    margin-top: 100px;
+    margin-left: 370px;
+    width: 60%;
+    height: 200px;
+    background-color: blue;
+}
+
+#profile_picture {
+    position: static;
+    background-color: green;
 }
 
 
@@ -70,7 +82,21 @@ h1 {
     margin-left: 3%;
 }
 
+#username {
+    padding: 0;
+    margin-top: 20px;
+}
+
 /* EVENT */
+
+.event_body {
+    background-image: url('/assets/Tavern');
+    background-repeat: no-repeat;
+    background-size: 1440px 936px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -94,7 +120,7 @@ html, body {
 #events_add_top {
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    /* background-color: red; */
     z-index: 5;
 }
 
@@ -141,9 +167,9 @@ html, body {
     display: none;
 }
 
-/* #speech_container:hover {
-    display: block;
-} */
+#speech_container:hover {
+    display: inline-block;
+}
 
 #speech_container {
     background-image: url('/assets/speech.png');
@@ -155,7 +181,7 @@ html, body {
     margin-top: -230px;
     margin-left: -50px;
     padding-top: 40px;
-    /* display: none; */
+    display: none;
 }
 
 #speech_text {
@@ -167,6 +193,20 @@ html, body {
 }
 
 #create_button {
-    margin-left: 830px;
+    margin-left: -450px;
     margin-top: 200px;
+}
+
+#game_image {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin-left: 1280px;
+}
+
+#home_button {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 1320px;
+    cursor: pointer;
 }
