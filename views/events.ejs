@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User</title>
+    <%- include('./partials/css-bootstrap.ejs') %>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <%-include('./partials/navbar.ejs')%>
+    <div id="events_div_container">
+        <div id="events_add_top">
+            <h1>a</h1>
+            <button type="button" value="join_game" id="create_button">CREATE NEW ADVENTURE!</button>
+        </div>
+        <div id="events_add_bottom">
+            <h1>b</h1>
+            <div>
+                <div id="events_top">
+                    <div id="table">
+                        <div id="speech_container">
+                            <p id="speech_text">event: warriors of waterdeep</p>
+                            <p id="speech_text">location:</p>
+                            <p id="speech_text">start:</p>
+                            <p id="speech_text">end:</p>
+                            <!-- <img src="/assets/speech.png" id="speech"> -->
+                        </div>
+                        <img src="/assets/chair.png" alt="chair" id="table_image">
+                        <button type="button" value="join_game" id="join_button">JOIN GAME!</button>
+                    </div>
+                    <div id="table">
+                        <div id="speech_container">
+                            <p id="speech_text">event: warriors of waterdeep</p>
+                            <p id="speech_text">location:</p>
+                            <p id="speech_text">start:</p>
+                            <p id="speech_text">end:</p>
+                            <!-- <img src="/assets/speech.png" id="speech"> -->
+                        </div>
+                        <img src="/assets/chair.png" alt="chair" id="table_image">
+                        <button type="button" value="join_game" id="join_button">JOIN GAME!</button>
+                    </div>
+                </div>
+
+                <div id="events_bot">
+                    <div id="table">
+                        <div id="speech_container">
+                            <p id="speech_text">event: warriors of waterdeep</p>
+                            <p id="speech_text">location:</p>
+                            <p id="speech_text">start:</p>
+                            <p id="speech_text">end:</p>
+                            <!-- <img src="/assets/speech.png" id="speech"> -->
+                        </div>
+                        <img src="/assets/chair.png" alt="chair" id="table_image">
+                        <button type="button" value="join_game" id="join_button">JOIN GAME!</button>
+                    </div>
+                    <div id="table">
+                        <div id="speech_container">
+                            <p id="speech_text">event: warriors of waterdeep</p>
+                            <p id="speech_text">location:</p>
+                            <p id="speech_text">start:</p>
+                            <p id="speech_text">end:</p>
+                            <!-- <img src="/assets/speech.png" id="speech"> -->
+                        </div>
+                        <img src="/assets/chair.png" alt="chair" id="table_image">
+                        <button type="button" value="join_game" id="join_button">JOIN GAME!</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <%-include ('./partials/js-bootstrap.ejs') %>
+</body>
+
+</html>

@@ -16,8 +16,8 @@ app.get('/home', (req, res) => {
     res.render('home')
 });
 
-app.get('/event-create', (req, res) => {
-    res.render('event-create')
+app.get('/event', (req, res) => {
+    res.render('events')
 });
 
 
