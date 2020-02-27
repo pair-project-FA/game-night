@@ -5,5 +5,12 @@
     "database": "game-night",
     "host": "127.0.0.1",
     "dialect": "postgres"
+  },
+  "production": {
+    "username": "fafhakkusweazh",
+    "password": "e02c5f25b79c7534aae92371518882d560ab15de5e9c3334ceb83c5b21e36754",
+    "database": "d4j8l45vcc21e6",
+    "host": "ec2-34-235-108-68.compute-1.amazonaws.com",
+    "dialect": "postgres"
   }
 }
