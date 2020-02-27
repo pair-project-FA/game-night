@@ -19,6 +19,7 @@ class GameController {
         });
       })
       .then(resEvent => {
+        console.log(resEvent)
         res.render("game", { data: gameData, events: resEvent });
       })
       .catch(err => res.send(err));
