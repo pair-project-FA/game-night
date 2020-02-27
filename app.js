@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 const routers = require("./routers");
 const session = require("express-session");
 
@@ -15,6 +14,11 @@ app.use(
   })
 );
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
 app.use(routers);
 
-app.listen(port, (req, res) => console.log(`I love you ${port}.`));
+app.listen(port);
