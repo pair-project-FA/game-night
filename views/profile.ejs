@@ -10,22 +10,32 @@
     <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <%-include('./partials/navbar.ejs')%>
+<body id="profile_body">
     <div id="user_display_container">
-        <div >
-            <img id="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcAovx_L5MCZu8BoLl1LyiDdIfKG0axFXuGTma2CQ-itz_Ajne" alt="avatar"> 
+        <div id="profile_background">
+            <img id="avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcAovx_L5MCZu8BoLl1LyiDdIfKG0axFXuGTma2CQ-itz_Ajne"
+                alt="avatar">
+
+            <h1 id="username_text">'USERNAME'</h1>
+
+
+            <div id="user_container">
+                <div id="user">
+                    <h2>email:</h2>
+                </div>
+                <div id="user">
+                    <h2>telephone number:</h2>
+                </div>
+                <div id="user">
+                    <h2>behaviour score:</h2>
+                </div>
+            </div>
+            <a href="home"> <img src="/assets/homebutton.png" alt="backbutton" style="height:65px; margin-top:80px"> </a>
+            <a href="login-page"> <img src="/assets/logout.png" alt="backbutton" style="height:65px; margin-top: 80px; margin-left: 20px;"> </a>
         </div>
-        <div id="username"><h1 id="username_text">'USERNAME'</h1></div>
-    </div>
-    <div id="user_container">
-        <div id="user"><h2>email:</h2></div>
-        <div id="user"><h2>telephone number:</h2></div>
-        <div id="user"><h2>email:</h2></div>
-        <div id="user"><h2>behaviour score:</h2></div>
-        <div id="user"><h2>behaviour score:</h2></div>
-    </div>
-    <%-include ('./partials/js-bootstrap.ejs') %>
+
+        <%-include ('./partials/js-bootstrap.ejs') %>
 </body>
 
 </html>

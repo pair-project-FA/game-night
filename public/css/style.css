@@ -15,6 +15,49 @@
 
 /* LOGIN */
 
+#login_body {
+    background-image: url('/assets/house.jpg');
+    background-repeat: no-repeat;
+    background-size: 1440px 936px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#login_placeholder {
+    margin-top: 100px;
+    margin-left: 40%;
+}
+
+#login_page {
+    margin-top: 150px;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+/* CREATE */
+
+.create_body {
+    background-image: url('/assets/house.jpg');
+    background-repeat: no-repeat;
+    background-size: 1440px 936px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#create_placeholder {
+    margin-top: 140px;
+    margin-left: 35%;
+}
+
+#create_main {
+    margin-top: 75px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: white;
+    padding: 20px;
+}
+
 /* HOME */
 
 .home_body {
@@ -36,7 +79,7 @@
     width: 60%;
     height: 100px;
     padding: 0px;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
 }
 
@@ -45,7 +88,8 @@
     margin-left: 370px;
     width: 60%;
     height: 200px;
-    background-color: blue;
+    /* background-color: blue; */
+    display: flex;
 }
 
 #profile_picture {
@@ -53,8 +97,30 @@
     background-color: green;
 }
 
+#select_game_background {
+    height: 300px;
+}
+
+#select_game_image {
+    position: absolute;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: -230px;
+}
+
+#select_game_placeholder {
+    height: 80px;
+    margin-left: 750px;
+    margin-top: 250px;
+}
+
+
 
 /* USER */
+
+#profile_body {
+    background-color: #FA741B;
+}
 
 #user_display_container {
     display: flex;
@@ -65,27 +131,32 @@
 #avatar {
     border-radius: 100px;
     height: 60px;
+    margin-top: 50px;
+    margin-left: 400px;
 }
 
 #username {
     position: relative;
-    margin-left: 2%;
+    margin-top: 20px;
 }
 
 #username_text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top : -45px;
+    margin-left: 3%
 }
 
 #user_container {
     margin-left: 3%;
 }
 
-#username {
-    padding: 0;
-    margin-top: 20px;
+
+#profile_background {
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    border: 20px black solid;
 }
+
 
 /* EVENT */
 
@@ -200,7 +271,7 @@ html, body {
 #game_image {
     width: 300px;
     height: 300px;
-    background-color: red;
+    /* background-color: red; */
     margin-left: 1280px;
 }
 
