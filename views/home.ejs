@@ -14,7 +14,7 @@
     <div id="home_container">
         <div id="navbar">
             <img style="height: 100px; margin-top:0px"
-                src="https://ih0.redbubble.net/image.613776335.5698/fmp,x_small,gloss,wall_texture,product,750x1000.u11.jpg"
+                src="<%= user.photo %>"
                 alt="profile_picture">
             <h1 id="username"><%= user.username %></h1>
             <div>
@@ -30,7 +30,7 @@
         <% for (let i = 0; i < data.length; i++) { %>
         <div>
             <a href="/games/<%= data[i].id %>" style="background-color: transparent; border-color: transparent;" class="btn btn-primary"><img src="/assets/speech.png" id="select_game_background">
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcAovx_L5MCZu8BoLl1LyiDdIfKG0axFXuGTma2CQ-itz_Ajne'
+                <img src='<%= data[i].game_photo %>'
                     id="select_game_image"></a>
             
         </div>

@@ -1,7 +1,19 @@
 "use strict";
 
 module.exports = (sequelize, DataTypes) => {
-  class Event extends sequelize.Sequelize.Model {}
+  class Event extends sequelize.Sequelize.Model {
+    getDate() {
+      var d = new Date(this.start_date),
+        month = "" + (d.getMonth() + 1),
+        day = "" + d.getDate(),
+        year = d.getFullYear();
+
+      if (month.length < 2) month = "0" + month;
+      if (day.length < 2) day = "0" + day;
+
+      return [year, month, day].join("-");
+    }
+  }
 
   Event.init(
     {
@@ -13,6 +25,13 @@ module.exports = (sequelize, DataTypes) => {
       UserId: DataTypes.INTEGER
     },
     {
+      hooks: {
+        beforeCreate: (event, options) => {
+          if (event.name == "") {
+            event.name = "Gathering at " + event.location;
+          }
+        }
+      },
       sequelize,
       modelName: "Event"
     }

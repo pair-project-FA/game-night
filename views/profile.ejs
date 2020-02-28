@@ -9,13 +9,11 @@
     <%- include('./partials/css-bootstrap.ejs') %>
     <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body id="profile_body">
-    <div class="row" style="height: 400px; background-color: transparent;">
-        <div class="col-4">
+        <div style="display: flex;">
             <div id="profile_background">
                 <img id="avatar"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcAovx_L5MCZu8BoLl1LyiDdIfKG0axFXuGTma2CQ-itz_Ajne"
+                    src="<%= data.photo %> "
                     alt="avatar">
                 <h1 id="username_text"><%= data.username %></h1>
                 <div id="user_container">
@@ -37,33 +35,34 @@
                 <a href="/logout"> <img src="/assets/logout.png" alt="backbutton"
                         style="height:65px; margin-top: 80px; margin-left: 20px;"> </a>
             </div>
-        </div>
-        <div class="col-8">
-            <div class="row">
-                <div id="events_container">
-                    <div class="row" style="height: 400px; background-color: transparent;">
-                        <h1>Events that you created</h1>
+        
+
+                    <div id="profile_create_table">    
+                    <h1>Events that you created</h1>
                         <table style="width:100%">
                             <tr>
                                 <th>name</th>
                                 <th>game</th>
                                 <th>location</th>
                                 <th>date</th>
+                                <th>option</th>
                             </tr>
                             <% for(let i = 0; i < dataCreate.length; i++){ %>
                             <tr>
                                 <td><%= dataCreate[i].name %></td>
                                 <td><%= dataCreate[i].Game.name %></td>
                                 <td><%= dataCreate[i].location %></td>
-                                <td><%= dataCreate[i].start_date %></td>
+                                <td><%= dataCreate[i].getDate() %></td>
+                                <td>
+                                    <a class="btn btn-primary" href="/events/<%= dataCreate[i].id %>/edit" role="button">edit</a>
+                                    <a class="btn btn-danger" href="/events/<%= dataCreate[i].id %>/delete" role="button">delete</a>
+                                </td>
                             </tr>
                             <% } %>
                         </table>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div style="height: 400px; background-color:transparent;" id="events_join">
+            
+                    <div id="profile_create_table"> 
                     <h1>Events that you joined</h1>
                     <table style="width:100%">
                         <tr>
@@ -71,20 +70,21 @@
                             <th>game</th>
                             <th>location</th>
                             <th>date</th>
+                            <th>option</th>
                         </tr>
                         <% for(let i = 0; i < dataJoin.length; i++){ %>
                         <tr>
-                            <td><%= dataJoin[i].name %></td>
+                            <td><%= dataJoin[i].Event.name %></td>
                             <td><%= dataJoin[i].Event.Game.name %></td>
                             <td><%= dataJoin[i].Event.location %></td>
-                            <td><%= dataJoin[i].Event.start_date %></td>
+                            <td><%= dataJoin[i].Event.getDate() %></td>
+                            <td><a class="btn btn-primary" href="/events/<%= dataJoin[i].EventId %> /unjoin" role="button">unjoin</a></td>
                         </tr>
                         <% } %>
                     </table>
                 </div>
-            </div>
+            
         </div>
-    </div>
 
     <div id="user_display_container">
 

@@ -1,5 +1,6 @@
-let { EventUser, Event } = require("../models");
-let sendEmail = require("../helpers/sendEmail");class EventController {
+let { EventUser, Event, Game } = require("../models");
+let sendEmail = require("../helpers/sendEmail");
+class EventController {
   static joinEvent(req, res) {
     let whatEventId = null;
     EventUser.create(
@@ -27,6 +28,46 @@ let sendEmail = require("../helpers/sendEmail");class EventController {
         );
         res.redirect("/users");
       })
+      .catch(err => res.send(eru));
+  }
+
+  static unjoinEvent(req, res) {
+    EventUser.destroy({
+      where: {
+        EventId: req.params.eventId
+      }
+    })
+      .then(resUnjoin => {
+        res.redirect("/users");
+      })
       .catch(err => res.send(err));
   }
-}module.exports = EventController;
+
+  static deleteEvent(req, res) {
+    Event.destroy({
+      where: {
+        id: req.params.eventId
+      }
+    })
+      .then(resDelete => {
+        res.redirect("/users");
+      })
+      .catch(err => res.send(err));
+  }
+
+  static editEvent(req, res) {
+    Event.findAll({
+      where: {
+        id: req.params.eventId
+      },
+      include: [Game],
+      returning: true
+    })
+      .then(resEdit => {
+        console.log(resEdit[0].name)
+        res.render("event-edit", { data: resEdit[0] });
+      })
+      .catch(err => res.send(err));
+  }
+}
+module.exports = EventController;

@@ -5,7 +5,8 @@
     "email": "aaa@gmail.com",
     "telephone_number": 1234567890,
     "behaviour_score": 5,
-    "game_score": 100
+    "game_score": 100,
+    "photo": "https://imgix.bustle.com/inverse/04/14/f4/52/4bbd/496c/ab8f/652bf068353e/do-you-even-need-to-lift-bro.png?w=1200&h=630&q=70&fit=crop&crop=faces&fm=jpg"
   },
   {
     "username": "betaBabes",
@@ -13,7 +14,8 @@
     "email": "bbb@gmail.com",
     "telephone_number": 2345678901,
     "behaviour_score": 50,
-    "game_score": 10
+    "game_score": 10,
+    "photo": "https://static.wixstatic.com/media/e5dc60_a51a8b230e4d42299a93a0dfae63c6d9~mv2.jpg/v1/fill/w_600,h_600,al_c,lg_1,q_85/e5dc60_a51a8b230e4d42299a93a0dfae63c6d9~mv2.jpg"
   },
   {
     "username": "charlieCharles",
@@ -21,7 +23,8 @@
     "email": "ccc@gmail.com",
     "telephone_number": 3456789012,
     "behaviour_score": 75,
-    "game_score": 1
+    "game_score": 1,
+    "photo": "https://yt3.ggpht.com/a/AGF-l7_xZb48QpDHRkW-RfffC-LEWtKLSSjOiylNbw=s900-c-k-c0xffffffff-no-rj-mo"
   },
   {
     "username": "deltaDrill",
@@ -29,7 +32,8 @@
     "email": "ddd@gmail.com",
     "telephone_number": 4567890123,
     "behaviour_score": 100,
-    "game_score": 50
+    "game_score": 50,
+    "photo": "https://lh3.googleusercontent.com/proxy/69Rd0dP1hzaSUpFErSjOxYWozt0-SPTf-_OWm-wRYI09RHHrmz-nV9xmEC1RLScqsxkGTjg-QTP1RYbHMAjmDDBUhUG8cvvlA9SZ5kxG184TiASYBoTCx-2_W791ojw2mgFExMz4HKFl8D2X2hY"
   },
   {
     "username": "epsilonEagle",
@@ -37,7 +41,8 @@
     "email": "eee@gmail.com",
     "telephone_number": 5678901234,
     "behaviour_score": 1,
-    "game_score": 200
+    "game_score": 200,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwKeBgGmAyCKj8qOPwzV4abVkwA9WKFRsn63U7UWFt-F1lg8nB"
   },
   {
     "username": "lele",
@@ -45,7 +50,8 @@
     "email": "lele@gmail.com",
     "telephone_number": 7890123456,
     "behaviour_score": 150,
-    "game_score": 50
+    "game_score": 50,
+    "photo": "https://awsimages.detik.net.id/customthumb/2015/10/31/4/102432_lele.jpg?w=700&q=80"
   },
   {
     "username": "fadhilahm",
@@ -53,6 +59,7 @@
     "email": "fadhilahmetra@gmail.com",
     "telephone_number": 7890123456,
     "behaviour_score": 150,
-    "game_score": 50
+    "game_score": 50,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcAovx_L5MCZu8BoLl1LyiDdIfKG0axFXuGTma2CQ-itz_Ajne"
   }
 ]

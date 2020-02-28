@@ -15,6 +15,7 @@
 
 /* LOGIN */
 
+
 #login_body {
     background-image: url('/assets/house.jpg');
     background-repeat: no-repeat;
@@ -113,6 +114,14 @@
     margin-top: 250px;
 }
 
+#profile_create_table {
+    width: 80%;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: black 20px solid; 
+}
+
 
 
 /* USER */
@@ -129,9 +138,9 @@
 
 #avatar {
     border-radius: 100px;
-    height: 60px;
+    width: 60px;
     margin-top: 50px;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 
 #username {
@@ -150,6 +159,7 @@
 
 
 #profile_background {
+    margin-top: 30px;
     background-color: white;
     height: 600px;
     width: 600px;
@@ -163,6 +173,11 @@
 
 
 /* EVENT */
+
+#game_image {
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .event_body {
     background-image: url('/assets/Tavern');
@@ -272,8 +287,9 @@ html, body {
 #game_image {
     width: 300px;
     height: 300px;
-    /* background-color: red; */
-    margin-left: 1280px;
+    background-color: white;
+    margin-left: 1200px;
+    margin-top: 50px;
 }
 
 #home_button {

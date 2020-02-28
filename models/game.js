@@ -7,7 +7,8 @@ module.exports = (sequelize, DataTypes) => {
       name: DataTypes.STRING,
       description: DataTypes.STRING,
       max_player_count: DataTypes.INTEGER,
-      play_time: DataTypes.INTEGER
+      play_time: DataTypes.INTEGER,
+      game_photo: DataTypes.STRING
     },
     {
       sequelize,

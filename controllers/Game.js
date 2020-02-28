@@ -12,7 +12,7 @@ class GameController {
     })
       .then(resGame => {
         gameData = resGame[0];
-        
+
         return Event.findAll({
           where: {
             GameId: req.params.gameId

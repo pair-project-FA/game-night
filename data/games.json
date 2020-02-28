@@ -3,30 +3,28 @@
     "name": "Monopoly",
     "description": "Monopoly is a board game currently published by Hasbro. In the game, players roll two six-sided dice to move around the game board, buying and trading properties, and developing them with houses and hotels.",
     "max_player_count": 8,
-    "play_time": 90
+    "play_time": 90,
+    "game_photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8M7bs_GGmjOqrOJ8AMt2hW3ohZVkegWMltHbI9qmDzVtvvNjL"
   },
   {
     "name": "Poker",
     "description": "Poker is a game which people play with a normal set (or deck) of 52 cards.",
     "max_player_count": 9,
-    "play_time": 60
-  },
-  {
-    "name": "Scrabble",
-    "description": "Scrabble, board-and-tile game in which two to four players compete in forming words with lettered tiles on a 225-square board.",
-    "max_player_count": 4,
-    "play_time": 50
+    "play_time": 60,
+    "game_photo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0012/4047/brand.gif?itok=9OpHSQto"
   },
   {
     "name": "Catan",
     "description": "The Settlers of Catan from Mayfair Games is an award-winning strategy game.",
     "max_player_count": 4,
-    "play_time": 120
+    "play_time": 120,
+    "game_photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOvGecOhmY-YttKZhlRL0ERpwiBeQBckdokEPGvJbvUENrgAcg"
   },
   {
     "name": "Risk",
     "description": "Risk is a strategy board game of diplomacy, conflict and conquest for two to six players.",
     "max_player_count": 6,
-    "play_time": 150
+    "play_time": 150,
+    "game_photo": "https://cdn.pogo.com/v/FnkzGw/img/game-thumbs/en/tn-huge-risk.png"
   }
 ]
